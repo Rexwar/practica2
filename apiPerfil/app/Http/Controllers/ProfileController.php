@@ -19,7 +19,22 @@ class ProfileController extends Controller
                 [
                     'Name' => 'Laravel',
                     'Level' => 'Principiante',
-                    'Year' => 2021
+                    'Year' => 2023
+                ],
+                [
+                    'Name' => 'javalin',
+                    'Level' => 'Principiante',
+                    'Year' => 2023
+                ],
+                [
+                    'Name' => 'react',
+                    'Level' => 'Principiante',
+                    'Year' => 2023
+                ],
+                [
+                    'Name' => 'React Native',
+                    'Level' => 'Principiante',
+                    'Year' => 2023
                 ],
                 // otros frameworks...
             ],
