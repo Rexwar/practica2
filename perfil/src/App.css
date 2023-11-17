@@ -1,0 +1,43 @@
+body{
+  background-color: #dddded;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tit {
+  animation: cambio-de-color 5s linear infinite; /* Cambia el color cada 5 segundos */
+}
+
+
+@keyframes cambio-de-color {
+  0% {
+    color: #079407; /* Verde inicial */
+  }
+  50% {
+    color: #008000; /* Verde intermedio */
+  }
+  100% {
+    color: #0e5b0e; /* Vuelve al verde inicial */
+  }
+}
+
+.zaz{
+  display: inline-block;
+}
+
+.tabla{
+  border-radius: 3%;
+}
+
+.descripcionHobbie{
+  padding: 0px;
+}
+div{
+  padding: 0px;
+}
