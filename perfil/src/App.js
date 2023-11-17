@@ -24,20 +24,24 @@ function App() {
       {data ? (
         <div>
           <Container className="Persona">
-            <Row>
-              <h1 className="justify-content-center">
+            <Card className="align-items-center presentacion">
+              <h1>
                 {data.Name} {data.Lastname}
               </h1>
-              <p>Email: {data.Email}</p>
-              <p>Ciudad: {data.City}</p>
-              <p>País: {data.Country}</p>
-              <p>Desc: {data.Summary}</p>
-            </Row>
+              <div class="row">
+              <i class="bi bi-envelope"></i>
+                <div class="col-sm"> 
+                {data.Email}</div>
+                <div class="col-sm">  {data.City}, {data.Country}</div>
+                
+              </div>
+              <p> {data.Summary}</p>
+            </Card>
           </Container>
           <Row>
             <Col>
               <div className="d-flex align-items-center justify-content-center">
-                <svg 
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
@@ -49,18 +53,20 @@ function App() {
                   <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z" />
                 </svg>
                 <h3 className="tit">Frameworks:</h3>
-              
-
               </div>
 
-              <Table striped >
-                <tbody >
+              <Table striped>
+                <tbody>
                   {data.Frameworks.map((framework, index) => (
-                    <tr key={index} >
+                    <tr key={index}>
                       <Row>
-                        <Col>{">"}{framework.Name}</Col>
                         <Col>
-                          Nivel: {framework.Level} Desde: {framework.Year}
+                          {">"}
+                          {framework.Name}
+                        </Col>
+                        <Col>
+                          <Col>Nivel: {framework.Level}</Col>
+                          <Col>Desde: {framework.Year}</Col>
                         </Col>
                       </Row>
                     </tr>
@@ -74,14 +80,11 @@ function App() {
                 {data.Hobbies.map((hobby, index) => (
                   <tr key={index}>
                     <row>
-                      <div className="tituloHobbie">
-                      {hobby.Name}
-                      </div>
+                      <div className="tituloHobbie">{hobby.Name}</div>
                       <div className="descripcionHobbie">
-                      {hobby.Description}
+                        {hobby.Description}
                       </div>
                     </row>
-                      
                   </tr>
                 ))}
               </Table>
