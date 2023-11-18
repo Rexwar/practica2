@@ -14,7 +14,7 @@ class ProfileController extends Controller
             'Email' => 'reyvaldesm@gmail.com',
             'City' => 'Calama',
             'Country' => 'Chile',
-            'Summary' => 'Estudio informatica en la UCN, Antofagasta, he participado en proyectos de desarrollo de software con metodologias agiles como scrum, desarrollado prototipos de videojuegos en unity, Soy una persona resiliente, proactivo, atento, con ganas de mejorar dia a dia',
+            'Summary' => 'Estudio Ingenieria civil en computacion e informática en la UCN, Antofagasta, he participado en proyectos de desarrollo de software con metodologias agiles como scrum, desarrollado prototipos de videojuegos en unity, Soy una persona resiliente, proactivo, atento, con ganas de mejorar dia a dia',
             'Frameworks' => [
                 [
                     'Name' => 'Laravel',

@@ -27,9 +27,6 @@ body{
   }
 }
 
-.zaz{
-  display: inline-block;
-}
 
 .tabla{
   border-radius: 3%;
@@ -48,4 +45,10 @@ body{
 .presentacion{
   padding: 1px !important;
   margin-top: 10px !important;
+  background-color: rgb(246, 234, 219);
+}
+
+.resumen{
+  padding:30px;
+  text-align: center;
 }
