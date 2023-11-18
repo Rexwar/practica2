@@ -40,15 +40,35 @@ body{
   padding: 0px !important;
   padding-left: 5px !important;
   padding-bottom: 10px !important;
+  
 }
 
 .presentacion{
   padding: 1px !important;
   margin-top: 10px !important;
   background-color: rgb(246, 234, 219);
+  animation: appearAndSlide 1s ease-out forwards;
 }
 
 .resumen{
   padding:30px;
   text-align: center;
+}
+
+
+
+@keyframes appearAndSlide {
+  0% {
+    top: -100px; /* Fuera de la vista, arriba */
+  }
+  100% {
+    top: 0; /* Llega a su posición final */
+  }
+}
+
+.frames{
+  animation: appearAndSlide 2s ease-out forwards;
+}
+.hobbies{
+  animation: appearAndSlide 1s ease-out forwards;
 }

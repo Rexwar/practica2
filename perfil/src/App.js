@@ -60,7 +60,7 @@ function App() {
             </Card>
           </Container>
           <Row>
-            <Col>
+            <Col >
               <div className="d-flex align-items-center justify-content-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
